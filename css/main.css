@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
 }
 
 /*body, .container {*/
@@ -15,11 +16,13 @@
     text-align: center;
 }
 
-/*.title, h1 {*/
-/*    color: #fff;*/
-/*    text-shadow: 1px 1px 1px #ffa949;*/
-/*    text-transform: uppercase;*/
-/*}*/
+#title {
+    color: #000;
+    font-size: 5.625rem; /* 90px/16px */
+    line-height: 1.3;
+    text-shadow: 1px 1px 1px #ffa949;
+    text-transform: uppercase;
+}
 
 /*.main-header {*/
 /*    padding-top: 250px;*/
@@ -28,27 +31,15 @@
 /*    background-size: cover;*/
 /*}*/
 
-/*.title {*/
-    font-size: 5.625rem; /* 90px/16px  */
-    
-/*    font-weight: normal;*/
-/*    line-height: 1.3;*/
-/*}*/
 
 /*h1 {*/
     
-    font-size: 1.625rem; /* 26px/16px */
+    /*font-size: 1.625rem; /* 26px/16px */
 /*}*/
 
 /*.arrow {*/
 /*    width: 50px;*/
 /*    padding-top: 20px;*/
-/*}*/
-
-/*.primary-content,*/
-/*.main-header,*/
-/*.main-footer {*/
-/*    text-align: center;*/
 /*}*/
 
 
@@ -60,7 +51,7 @@
 
 /*.intro {*/
 /*    border-bottom: 2px solid #ffa949;*/
-    font-size: 2.375em; /* 38px/16px */
+    /*font-size: 2.375em; /* 38px/16px */
 /*    line-height: 1.6;*/
 /*    color: #000;*/
 /*    text-shadow: 1px 1px 1px #ffa949;*/
@@ -71,42 +62,41 @@
 /*    padding-top: 10px;*/
 /*}*/
 
-/*#quantity {*/
-/*    border: 1px solid #000;*/
-/*    width: 210px;*/
-/*    height: 40px;*/
-/*    padding: 0;*/
-/*    margin: 0 auto 40px auto;*/
-/*}*/
+#quantity {
+    border: 1px solid #000;
+    width: 210px;
+    height: 40px;
+    padding: 0;
+    margin: 0 auto 40px auto;
+}
 
 /*#quantity:hover {*/
 /*    border-color: #ffa949;*/
 /*    transition: 0.1s;*/
 /*}*/
 
-/*#quantity select {*/
-/*    display: block;*/
-/*    width: 100%;*/
-/*    margin: 0;*/
-/*    padding-left: 16px;*/
-    /*-webkit-appearance: none;
+#quantity select {
+    -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border: none;
     background: none;
-    outline: none;*/
-/*    text-transform: uppercase;*/
-/*    font-size: 16px;*/
-/*    line-height: 40px;*/
-/*    font-weight: 700;*/
-/*}*/
+    border: none;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0;
+    outline: none;
+    padding-left: 16px;
+    text-transform: uppercase;
+    width: 100%;
+}
 
-/*#output {*/
-/*    text-align: justify;*/
-/*}*/
+#output {
+    text-align: justify;
+}
 
 /*p {*/
-/*    font-family: "Droid Sans", sans-serif;*/
 /*    color: #000;*/
 /*    font-size: 18px;*/
 /*    line-height: 26px;*/
@@ -117,16 +107,40 @@
 /*    padding-top: 3.750em;*/
 /*}*/
 
-/*a {*/
-/*    display: block;*/
-/*    text-align: center;*/
-/*    text-decoration: none;*/
-/*    color: #000;*/
-/*    font-weight: 700;*/
-/*    font-family: "Droid Sans", sans-serif;*/
-/*}*/
+a,
+a:hover {
+    text-decoration: none;
+}
 
-/*a:hover {*/
-/*    color: #ffa949;*/
-/*    transition: 0.1s;*/
-/*}*/
+
+a {
+    text-align: center;
+    color: #000;
+}
+
+a:hover {
+    color: #ffa949;
+    font-size: 1.2rem;
+    transition: 0.1s;
+}
+
+/***** MEDIA QUERIES *****/
+@media (max-width: 576px) { 
+    p {
+        font-size: 1rem;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+
+@media (min-width: 1200px) { 
+    p,
+    a {
+        font-size: 2rem;
+    }
+}
