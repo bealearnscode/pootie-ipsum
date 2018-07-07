@@ -45,7 +45,7 @@ function prependText() {
 
 
 
-//Pootie Talk: the array tht will populate the paragraphs
+//Pootie Talk: the array that will populate the paragraphs
 
 var pootieTalk = [
     "Sepatown!",
