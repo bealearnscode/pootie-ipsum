@@ -8,9 +8,12 @@
 /*    line-height: 140%;*/
 /*}*/
 
-/*.title, h1,h2 {*/
-/*    text-align: center;*/
-/*}*/
+#title,
+#description,
+#greeting,
+#credits {
+    text-align: center;
+}
 
 /*.title, h1 {*/
 /*    color: #fff;*/
