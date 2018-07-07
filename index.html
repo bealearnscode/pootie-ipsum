@@ -3,20 +3,22 @@
     <head>
         <meta charset="utf-8">
         <title>Pootie Ipsum | Pootie Tang Placeholder Text Generator</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
+        <!--<link rel="stylesheet" href="css/normalize.css">-->
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
         <div class="container">
-            <header class="main-header">
-                <span class="title">Pootie Ipsum</span>
-                <h1>A dummy text generator for all you main damies and dime dillies!</h1>
+            
+            <header class="main-header row">
+                <h1 class="title">Pootie Ipsum</h1>
+                <h2>A dummy text generator for all you main damies and dime dillies!</h2>
                 <a href="#primary"><img class="arrow" src="img/arrow.svg" alt="Down arrow"></a>
             </header>
-
+            
             <main class="primary-content row" id="primary">
                 <div class="intro">
                     <h2>Sadatay!</h2>
@@ -35,13 +37,12 @@
                 <div id="output"></div>
 
             </main>
-            <footer class="footer">
+            <footer class="footer row">
                    <p>Created by a dime dillie, <a href="http://twitter.com/BeaLearnsCode" target="_blank">Beatrix House</a></p>
             </footer>
         </div>
 
-        <script src = "http://www.google.com/jsapi" type = "text/javascript"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="js/pootie.js"></script>
     </body>
 </html>
