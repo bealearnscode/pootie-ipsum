@@ -14,17 +14,17 @@
         <div class="container">
             
             <header class="main-header row">
-                <h1 class="title">Pootie Ipsum</h1>
-                <h2>A dummy text generator for all you main damies and dime dillies!</h2>
+                <h1 id="title">Pootie Ipsum</h1>
+                <h2 id="description">A dummy text generator for all you main damies and dime dillies!</h2>
                 <a href="#primary"><img class="arrow" src="img/arrow.svg" alt="Down arrow"></a>
             </header>
             
             <main class="primary-content row" id="primary">
-                <div class="intro">
-                    <h2>Sadatay!</h2>
-                </div>
+                <section class="intro">
+                    <p id="greeting">Sadatay!</p>
+                </section>
 
-                <div id="paragaph-quantity-menu">
+                <section id="paragaph-quantity-menu">
                     <select id="quantity" onchange="changeEventHandler(event);">
                         <option value="1" selected="selected">1 paragraph</option>
                         <option value="2">2 paragraphs</option>
@@ -32,13 +32,13 @@
                         <option value="4">4 paragraphs</option>
                         <option value="5">5 paragraphs</option>
                     </select>
-                </div>
+                </section>
 
-                <div id="output"></div>
+                <section id="output"></section>
 
             </main>
             <footer class="footer row">
-                   <p>Created by a dime dillie, <a href="http://twitter.com/BeaLearnsCode" target="_blank">Beatrix House</a></p>
+                   <p id="credits">Created by a dime dillie, <a href="http://twitter.com/BeaLearnsCode" target="_blank">Beatrix House</a></p>
             </footer>
         </div>
 
